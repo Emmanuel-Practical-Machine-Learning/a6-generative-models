@@ -27,7 +27,7 @@ Adjust the slider to show 100 neighbors and look at some of the words that are s
 
 You can click "Isolate 101 points" above the search bar to get rid of the other non-neighboring words. The picture below shows the result of entering the word "hello". You'll notice a lot of computer science terminology, which indicates that those terms frequently appear together in the text corpus that was used to create Word2Vec 10K data set.
 
-![](https://lh4.googleusercontent.com/Lj6II2hv8op2zmkXw71pbXJQeu8l38843UwLmoRFt55ns3YFgP5szy6XVnbv6qVntOH2gvCqivG0vi9EX1QvJsUkhBYOT6tsLpjwW9BBf5UNixuoLCQeGyd_0klr2rulFKsMvQG5)
+![Embedding projector user interface](img/BG_img_1.png)
 
 Try different keywords and look at the 100 nearest neighbors. Are these words plausibly related to the word you searched for? There's also a "Word2Vec All" data set of 70,000 words that you can experiment with.
 

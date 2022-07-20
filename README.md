@@ -18,7 +18,7 @@ You should see a cloud of the 10,000 images in the MNIST collection, mapped into
 
 Your screen is showing the collection of MNIST points projected down into 3 dimensions. Each point is colored according to its label (one of the digits 0 through 9). You can use the mouse to move and rotate the 3-dimensional clump.
 
-![](https://lh4.googleusercontent.com/n8MYrqbdGZ1uzmQQnhQ5RpcokiJPcQ-rP1byP4XkBlpfrHExT4FQY8RJk1yj4mS9HdGrjbEqm7dE7ZKN6yYUfQflPrUw1p7_2MpqIIopW0vPrvZKbAB1B0-24VF2iEA4PeubOGu4)
+![3D graph of latent space](img/RM_img_1.png)
 
 ## How this Visualization Works
 
@@ -28,7 +28,8 @@ Read about PCA vs t-SNE in [BACKGROUND.md](BACKGROUND.md#how-this-visualization-
 
 Change the projection method from **PCA** to **t-SNE**. Give the computation a minute to initialize and another minute or two for the shape to stabilize. Bear in mind that even though the 3-dimensional shape is changing, this is still the same set of points in 784-dim space at each step. Only the projection is changing. This is how it might look after a few hundred iterations:
 
-![](https://lh3.googleusercontent.com/VsMc9Y7o8jL2vyXnXvwRyHru-HnpdLUX_lv7vIin8mQ1nxSv2xA016prfojVHBbemY0KrKf7CnkdRp_MHjFbuUX1j8brgi7agItrFIsUgP1Sc69lQIin6RH_DzurjZhnUIuHIze2)
+![3D graph of latent space](img/RM_img_2.png)
+
 
 Spend some time using the embedding projector to make and share observations about the MNIST data. Do the different digits separate into distinct clouds? Are there images that are in the wrong cloud, and can you make sense of why they are wrong? Are there images that are outliers from the rest of the data? Are there digits that seem more separate from the others, and are there pairs of digits that are more easily confused? Take notes on these and other observations that you make and write them up for your assignment.
 
@@ -46,7 +47,7 @@ Embedding words in a geometric space lets us examine distances between words. Th
 
 Pick a word to explore with the embedding projector, say, "piano". Type that word in the search bar and click "Isolate 101 points". Now at the bottom left, change the embedding method from PCA to CUSTOM. Fill in "violin" on the left and "drum" on the right. The words will now be displayed from left to right according to their distance along the line from "violin" to "drum". (You'll notice that you're now unable to rotate the 3D space due to the left/right settings.) Can you give any interpretations to what is shown? 
 
-![](https://lh5.googleusercontent.com/QsyosKx1y-HXzmyIX1IxGvzpcxhreEbx7-n8CA1G2zC2B6eeVo5yvxzVeOaMEcjwdBO0TmarEuPPY3KJgFeUsY1BYDDEBsVPkdcDzlIOH1nMx_ljhEm5cM7lA36jS0Phx4_-Tcns)
+![Embedding project user interface](img/RM_img_3.png)
 
 Remember that this geometry is not based on any word definitions, but rather only the frequencies with which words co-occur in phrases. Also keep in mind that the vertical positions of the words are random, although you can specify these, too, by setting "up" and "down". 
 
